@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './categories.styles.scss'
+import Categories from './components/categories/categories.component'
+
+//move categories into its own component
+const categories = [
+  {
+    id: 1,
+    title: 'Hats',
+    imageUrl: ''
+  },
+  {
+    id: 2,
+    title: 'Socks',
+    imageUrl: ''
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Categories categories={categories} />
+
   );
 }
 
