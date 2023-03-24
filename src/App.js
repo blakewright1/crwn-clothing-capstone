@@ -1,7 +1,6 @@
 import './categories.styles.scss'
 import Categories from './components/categories/categories.component'
 
-//move categories into its own component
 const categories = [
   {
     id: 1,
@@ -18,7 +17,6 @@ const categories = [
 function App() {
   return (
     <Categories categories={categories} />
-
   );
 }
 
