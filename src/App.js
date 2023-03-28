@@ -1,22 +1,12 @@
-import './categories.styles.scss'
-import Categories from './components/categories/categories.component'
+import { Routes, Route } from 'react-router-dom';
 
-const categories = [
-  {
-    id: 1,
-    title: 'Hats',
-    imageUrl: ''
-  },
-  {
-    id: 2,
-    title: 'Socks',
-    imageUrl: ''
-  }
-]
+import Home from "./routes/home/home.component";
 
 function App() {
   return (
-    <Categories categories={categories} />
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
   );
 }
 
